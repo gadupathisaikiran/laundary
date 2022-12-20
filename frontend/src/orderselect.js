@@ -13,8 +13,15 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Orderselect = () => {
     const [show, setShow] = useState(false);
+    
+    const [select,setSelect]=useState(false)
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const onselect=()=> setSelect(!show)
+    
+
 
 
     return (
@@ -56,10 +63,10 @@ const Orderselect = () => {
                      <td><img src='https://cdn-icons-png.flaticon.com/128/2503/2503380.png' className='washlogo' alt='img'/>shirts</td>
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
                      <div>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
                  </tr>
                  <tr>
@@ -68,10 +75,10 @@ const Orderselect = () => {
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
 
                      <div>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
 
 
@@ -81,10 +88,10 @@ const Orderselect = () => {
                      <td><img src='https://cdn-icons-png.flaticon.com/128/3531/3531826.png' className='washlogo' alt='img'/>Trousers</td>
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
                      <div>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png'className='washlogo'  onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
 
                  </tr>
@@ -93,10 +100,10 @@ const Orderselect = () => {
                      <td><img src='https://cdn-icons-png.flaticon.com/128/1176/1176990.png' className='washlogo' alt='img'/>jeans</td>
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
                      <div>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
                  </tr>
                  <tr>
@@ -104,10 +111,10 @@ const Orderselect = () => {
                      <td><img src='https://cdn-icons-png.flaticon.com/128/3797/3797100.png' className='washlogo' alt='img'/>Boxers</td>
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
                      <div>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo'onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                     <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
                  </tr>
                  <tr>
@@ -115,10 +122,10 @@ const Orderselect = () => {
                      <td><img src='https://cdn-icons-png.flaticon.com/128/6642/6642087.png' className='washlogo' alt='img'/>Joggers</td>
                      <td><input type="number" style={{ width: "60px" }} placeholder="0"></input></td>
                      <div>
-                         <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' alt='img'></img></td>
-                         <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' alt='img'></img></td>
-                         <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo'alt='img'></img></td>
-                         <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' alt='img'></img></td>
+                         <td><img src='https://cdn-icons-png.flaticon.com/128/1075/1075355.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                         <td><img src='https://cdn-icons-png.flaticon.com/128/5537/5537788.png'className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
+                         <td><img src='https://cdn-icons-png.flaticon.com/128/804/804272.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}}alt='img'></img></td>
+                         <td><img src='https://cdn-icons-png.flaticon.com/128/2975/2975178.png' className='washlogo' onClick={(e)=>{e.target.style.backgroundColor="#5861AE"}} alt='img'></img></td>
                      </div>
                  </tr>
              </tbody>
